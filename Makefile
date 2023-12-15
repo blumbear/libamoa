@@ -39,8 +39,6 @@ OBJ_DIR = obj/
 SRCS = $(addprefix src/, $(addsuffix .c, $(FILES)))
 OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(FILES)))
 
-NAME = libft.a
-
 .PHONY = all clean fclean re
 
 all: $(OBJ_DIR) $(OBJS)
