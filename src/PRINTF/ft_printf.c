@@ -59,6 +59,3 @@ int	ft_printf(const char *str, ...)
 	}
 	return (len);
 }
-int main(){
-	ft_printf("aiygdshf%d",12);
-}
