@@ -6,11 +6,11 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:25:30 by ttaquet           #+#    #+#             */
-/*   Updated: 2023/10/22 16:29:51 by ttaquet          ###   ########.fr       */
+/*   Updated: 2023/12/15 18:07:32 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "itsmylib.h"
 
 int	result_len(char const *str, char c)
 {

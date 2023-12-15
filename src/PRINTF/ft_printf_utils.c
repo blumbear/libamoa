@@ -6,11 +6,11 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 16:34:28 by ttaquet           #+#    #+#             */
-/*   Updated: 2023/12/13 16:41:37 by ttaquet          ###   ########.fr       */
+/*   Updated: 2023/12/15 18:07:32 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "itsmylib.h"
 
 int	ft_print_char(char c)
 {

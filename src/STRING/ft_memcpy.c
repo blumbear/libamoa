@@ -6,11 +6,11 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 16:26:54 by ttaquet           #+#    #+#             */
-/*   Updated: 2023/10/20 15:52:51 by ttaquet          ###   ########.fr       */
+/*   Updated: 2023/12/15 18:07:32 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "itsmylib.h"
 
 void	*ft_memcpy(void	*dest, const void	*src, size_t	n)
 {

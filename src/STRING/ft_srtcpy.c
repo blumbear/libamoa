@@ -6,11 +6,11 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 14:03:40 by ttaquet           #+#    #+#             */
-/*   Updated: 2023/12/15 14:03:59 by ttaquet          ###   ########.fr       */
+/*   Updated: 2023/12/15 18:07:32 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "itsmylib.h"
 
 char	*ft_strcpy(char *dest, char *src)
 {
