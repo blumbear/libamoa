@@ -6,7 +6,7 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:45:21 by ttaquet           #+#    #+#             */
-/*   Updated: 2023/12/15 14:06:30 by ttaquet          ###   ########.fr       */
+/*   Updated: 2023/12/15 14:33:50 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ int				ft_tolower(int c);
  * @param fd the file who are open
  * @return char* the next line of the file
  */
-char				*get_next_line(int fd);
+char			*get_next_line(int fd);
 
 /******************************************************************************/
 /*                                                                            */
