@@ -100,7 +100,7 @@ int				ft_tolower(int c);
 
 /******************************************************************************/
 /*                                                                            */
-/* Get_next_line                                                                     */
+/* Get_next_line                                                              */
 /*                                                                            */
 /******************************************************************************/
 
@@ -110,7 +110,7 @@ int				ft_tolower(int c);
  * @param fd the file who are open
  * @return char* the next line of the file
  */
-char	*get_next_line(int fd);
+char				*get_next_line(int fd);
 
 /******************************************************************************/
 /*                                                                            */
