@@ -26,6 +26,8 @@ ft_lstclear ft_lstiter ft_lstmap
 
 PRINTF = ft_printf ft_printf_utils
 
+SECURITY = ft_free ft_free_llist
+
 STDLIB = ft_atoi ft_calloc ft_realloc
 
 STRING = ft_strlen ft_memset ft_bzero ft_memcpy ft_memcpy ft_memmove ft_striteri \
@@ -39,6 +41,7 @@ $(addprefix src/GET_NEXT_LINE/, $(GET_NEXT_LINE)) \
 $(addprefix src/IO/, $(IO)) \
 $(addprefix src/LINKED_LIST/, $(LINKED_LIST)) \
 $(addprefix src/PRINTF/, $(PRINTF)) \
+$(addprefix src/PRINTF/, $(SECURITY)) \
 $(addprefix src/STDLIB/, $(STDLIB)) \
 $(addprefix src/STRING/, $(STRING))
 
