@@ -21,7 +21,7 @@ void	ft_free_llist(t_list **lst)
 	while (*lst)
 	{
 		tmp = (*lst)->next;
-		(*lst)->nbr = 0;
+		(*lst)->content = 0;
 		free(*lst);
 		*lst = tmp;
 	}
