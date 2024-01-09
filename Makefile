@@ -34,7 +34,7 @@ STRING = ft_strlen ft_memset ft_bzero ft_memcpy ft_memcpy ft_memmove ft_striteri
 ft_strlcpy ft_strlcat ft_strchr ft_strrchr ft_strncmp ft_memchr ft_memcmp ft_strnstr \
 ft_strdup ft_substr ft_strjoin ft_strjoin ft_strtrim ft_itoa ft_strmapi ft_strcpy
 
-FILES = $(CTYPE) $(GET_NEXT_LINE) $(IO) $(LINKED_LIST) $(PRINTF) $(STDLIB) $(STRING)
+FILES = $(CTYPE) $(GET_NEXT_LINE) $(IO) $(LINKED_LIST) $(PRINTF) $(SECURITY) $(STDLIB) $(STRING)
 
 SRC_FILES = $(addprefix src/CTYPE/, $(CTYPE)) \
 $(addprefix src/GET_NEXT_LINE/, $(GET_NEXT_LINE)) \
