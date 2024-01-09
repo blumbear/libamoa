@@ -576,5 +576,11 @@ t_list			*ft_lstmap(t_list *list, void *(*f)(void *),
  */
 void			ft_freestr(char **lst);
 
+/**
+ * @brief this fuction will free every node of an t_list type
+ * 
+ * @param lst the list who are free
+ */
+void			ft_free_llist(t_list **lst);
 
 #endif
