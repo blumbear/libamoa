@@ -563,4 +563,18 @@ void			ft_lstiter(t_list *list, void (*f)(void *));
 t_list			*ft_lstmap(t_list *list, void *(*f)(void *),
 					void (*del_fun)(void *));
 
+/******************************************************************************/
+/*                                                                            */
+/* Security                                                                   */
+/*                                                                            */
+/******************************************************************************/
+
+/**
+ * @brief this function will free every subtab of an tab
+ * 
+ * @param lst an tab who are free after this function
+ */
+void			ft_freestr(char **lst);
+
+
 #endif
