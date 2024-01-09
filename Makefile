@@ -34,7 +34,7 @@ ft_strdup ft_substr ft_strjoin ft_strjoin ft_strtrim ft_itoa ft_strmapi ft_strcp
 
 FILES = $(CTYPE) $(GET_NEXT_LINE) $(IO) $(LINKED_LIST) $(PRINTF) $(STDLIB) $(STRING)
 
-SRC_FILES = $(addprefix srcs/CTYPE/, $(CTYPE)) \
+SRC_FILES = $(addprefix src/CTYPE/, $(CTYPE)) \
 $(addprefix src/GET_NEXT_LINE/, $(GET_NEXT_LINE)) \
 $(addprefix src/IO/, $(IO)) \
 $(addprefix src/LINKED_LIST/, $(LINKED_LIST)) \
