@@ -12,9 +12,9 @@
 
 #include "itsmylib.h"
 
-void	ft_free_llist(t_stack **lst)
+void	ft_free_llist(t_list **lst)
 {
-	t_stack	*tmp;
+	t_list	*tmp;
 
 	if (!lst)
 		return ;
