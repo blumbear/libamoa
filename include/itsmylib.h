@@ -6,7 +6,7 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:45:21 by ttaquet           #+#    #+#             */
-/*   Updated: 2023/12/15 14:33:50 by ttaquet          ###   ########.fr       */
+/*   Updated: 2024/01/22 16:29:57 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ typedef struct s_list
 /******************************************************************************/
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1000000
+#  define BUFFER_SIZE 1
 # endif
 
 # define MAX_FD 128

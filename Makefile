@@ -6,7 +6,7 @@
 #    By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 16:02:49 by ttaquet           #+#    #+#              #
-#    Updated: 2023/12/18 12:08:08 by ttaquet          ###   ########.fr        #
+#    Updated: 2024/01/22 16:29:08 by ttaquet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ ft_lstclear ft_lstiter ft_lstmap
 
 PRINTF = ft_printf ft_printf_utils
 
-SECURITY = ft_free ft_free_llist
+SAFE = ft_freelst ft_free_llist
 
 STDLIB = ft_atoi ft_calloc ft_realloc
 
@@ -34,14 +34,14 @@ STRING = ft_strlen ft_memset ft_bzero ft_memcpy ft_memcpy ft_memmove ft_striteri
 ft_strlcpy ft_strlcat ft_strchr ft_strrchr ft_strncmp ft_memchr ft_memcmp ft_strnstr \
 ft_strdup ft_substr ft_strjoin ft_strjoin ft_strtrim ft_itoa ft_strmapi ft_strcpy
 
-FILES = $(CTYPE) $(GET_NEXT_LINE) $(IO) $(LINKED_LIST) $(PRINTF) $(SECURITY) $(STDLIB) $(STRING)
+FILES = $(CTYPE) $(GET_NEXT_LINE) $(IO) $(LINKED_LIST) $(PRINTF) $(SAFE) $(STDLIB) $(STRING)
 
 SRC_FILES = $(addprefix src/CTYPE/, $(CTYPE)) \
 $(addprefix src/GET_NEXT_LINE/, $(GET_NEXT_LINE)) \
 $(addprefix src/IO/, $(IO)) \
 $(addprefix src/LINKED_LIST/, $(LINKED_LIST)) \
 $(addprefix src/PRINTF/, $(PRINTF)) \
-$(addprefix src/PRINTF/, $(SECURITY)) \
+$(addprefix src/SAFE/, $(SAFE)) \
 $(addprefix src/STDLIB/, $(STDLIB)) \
 $(addprefix src/STRING/, $(STRING))
 
