@@ -6,11 +6,11 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 15:05:30 by ttaquet           #+#    #+#             */
-/*   Updated: 2024/01/09 15:05:59 by ttaquet          ###   ########.fr       */
+/*   Updated: 2024/01/22 17:03:11 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "itsmylib.h"
+#include "libamoa.h"
 
 void	ft_free_llist(t_list **lst)
 {

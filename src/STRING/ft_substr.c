@@ -6,11 +6,11 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 13:49:46 by ttaquet           #+#    #+#             */
-/*   Updated: 2023/12/15 18:07:32 by ttaquet          ###   ########.fr       */
+/*   Updated: 2024/01/22 17:03:11 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "itsmylib.h"
+#include "libamoa.h"
 
 char	*ft_substr(const char	*s, unsigned int start, size_t	len)
 {
