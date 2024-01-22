@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = itsmylib.a
+NAME = libamoa.a
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
