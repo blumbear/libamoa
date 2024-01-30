@@ -433,7 +433,7 @@ void			*ft_calloc(size_t nmemb, size_t size);
  * @param size The numbers of elements.
  * @return Return a pointer to the allocated memory or NULL if case of error.
  */
-void			*ft_realloc(void *ptr, size_t size);
+void			*ft_realloc(void *ptr, size_t newsize);
 
 /******************************************************************************/
 /*                                                                            */
