@@ -12,7 +12,7 @@
 
 NAME = libamoa.a
 
-MAKEFLAGS += --no-print-directory -s
+MAKEFLAGS += -s
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
