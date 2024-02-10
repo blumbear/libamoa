@@ -14,9 +14,6 @@
 
 void	ft_putnbr_fd(signed int n, int fd)
 {
-	int	sign;
-
-	sign = n > 0;
 	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
 	else if (n < 0)
