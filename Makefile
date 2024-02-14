@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+         #
+#    By: tom <tom@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 16:02:49 by ttaquet           #+#    #+#              #
-#    Updated: 2024/01/22 16:29:08 by ttaquet          ###   ########.fr        #
+#    Updated: 2024/02/14 18:32:38 by tom              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libamoa.a
 
-MAKEFLAGS += -s
+Makefile += -s
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
@@ -62,9 +62,12 @@ all: $(OBJ_DIR) $(OBJS)
 clean:
 	@echo "\033[32m✔ Suppression des fichiers sources...\033[37m"
 	@rm -rf $(OBJ_DIR)
+	@echo "\033[32m✔ Fichier sources supprimer...\033[37m"
 
 fclean: clean
+	@echo "\033[32m✔ Suppression de la bibliothèque...\033[37m"
 	@rm -rf $(NAME)
+	@echo "\033[32m✔ Bibliothèque supprimer...\033[37m"
 
 re: fclean all
 
@@ -72,4 +75,6 @@ obj/%.o: src/*/%.c
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR):
+	@echo "\033[32m✔ création du dossier obj...\033[37m"
 	@mkdir -p $@
+	@echo "\033[32m✔ dossier obj crée...\033[37m"
