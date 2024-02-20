@@ -565,7 +565,7 @@ t_list			*ft_lstmap(t_list *list, void *(*f)(void *),
 
 /******************************************************************************/
 /*                                                                            */
-/* Security                                                                   */
+/* SAFE                                                                       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -574,7 +574,7 @@ t_list			*ft_lstmap(t_list *list, void *(*f)(void *),
  * 
  * @param lst an tab who are free after this function
  */
-void			ft_freestr(char **lst);
+void			ft_freelststr(char **lst);
 
 /**
  * @brief this fuction will free every node of an t_list type
