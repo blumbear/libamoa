@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITSMYLIB_H
-# define ITSMYLIB_H
+#ifndef LIBAMOA_H
+# define LIBAMOA_H
 
 # include <stdlib.h>
 # include <unistd.h>
