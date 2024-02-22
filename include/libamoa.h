@@ -18,6 +18,7 @@
 # include <stdarg.h>
 # include <fcntl.h>
 # include <limits.h>
+# include <stdbool.h>
 
 /******************************************************************************/
 /*                                                                            */
