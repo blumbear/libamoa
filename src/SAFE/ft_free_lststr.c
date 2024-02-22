@@ -12,7 +12,7 @@
 
 #include "libamoa.h"
 
-void	ft_freelststr(char **lst)
+void	ft_free_lststr(char **lst)
 {
 	char	*n1;
 
