@@ -12,11 +12,11 @@
 
 #include "libamoa.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **head, t_list *new)
 {
-	if (lst && new)
+	if (head && new)
 	{
-		new->next = *lst;
-		*lst = new;
+		new->next = *head;
+		*head = new;
 	}
 }
