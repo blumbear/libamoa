@@ -14,14 +14,11 @@
 
 void	ft_free_lststr(char **lst)
 {
-	char	*n1;
-
 	if (!lst)
 		return ;
 	while (*lst)
 	{
-		n1 = *lst;
+		free(*lst);
 		lst++;
-		free(n1);
 	}
 }
