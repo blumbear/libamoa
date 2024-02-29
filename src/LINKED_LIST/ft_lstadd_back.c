@@ -12,9 +12,9 @@
 
 #include "libamoa.h"
 
-void	ft_lstadd_back(t_list **list, t_list *new)
+void	ft_lstadd_back(t_list **head, t_list *new)
 {
-	while (*list)
-		list = &(*list)->next;
+	while (*head)
+		head = &(*list)->next;
 	*list = new;
 }
