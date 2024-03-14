@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libamoa.h"
+#include "libamoa.h"
 
 int	ft_not_in(char	*str, char c)
 {
