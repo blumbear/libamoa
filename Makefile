@@ -53,12 +53,12 @@ OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(FILES)))
 .PHONY = all clean fclean re
 
 all: $(OBJ_DIR) $(OBJS)
-	@echo "\033[32m✔ Compilation des fichiers sources...\033[37m"
+	@echo "\033[32m✔ Compilation des fichiers objets...\033[37m"
 	@ar -rcs $(NAME) $(OBJS)
 	@echo "\033[32m✔ Bibliothèque créee.\033[37m"
 
 clean:
-	@echo "\033[32m✔ Suppression des fichiers sources...\033[37m"
+	@echo "\033[32m✔ Suppression des fichiers objets...\033[37m"
 	@rm -rf $(OBJ_DIR)
 
 fclean: clean
