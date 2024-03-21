@@ -374,7 +374,7 @@ void			ft_bzero(void	*s, size_t	n);
  * @param number An str
  * @return size_t The length of 'number'
  */
-size_t			ft_intlen(int	number);
+size_t			ft_intlen(int number);
 
 /**
  * @brief Allocates (with malloc(3)) and returns a string representing the
