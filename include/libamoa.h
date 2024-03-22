@@ -44,6 +44,13 @@ typedef struct s_list
 
 # define MAX_FD 128
 
+# ifndef MAX_INT
+#  define MAX_INT 2147483647
+# endif
+# ifndef MAX_INT
+#  define MAX_INT -2147483648
+# endif
+
 /******************************************************************************/
 /*                                                                            */
 /* CType                                                                      */
