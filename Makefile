@@ -6,7 +6,7 @@
 #    By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 16:02:49 by ttaquet           #+#    #+#              #
-#    Updated: 2024/02/22 15:03:30 by ttaquet          ###   ########.fr        #
+#    Updated: 2024/03/22 15:22:04 by ttaquet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,7 @@ OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(FILES)))
 all: $(OBJ_DIR) $(OBJS)
 	@echo "\033[32m✔ Compilation des fichiers objets...\033[37m"
 	@ar -rcs $(NAME) $(OBJS)
-	@echo "\033[32m✔ Bibliothèque créee.\033[37m"
+	@echo "\033[32m✔ Lib créee.\033[37m"
 
 clean:
 	@echo "\033[32m✔ Suppression des fichiers objets...\033[37m"
