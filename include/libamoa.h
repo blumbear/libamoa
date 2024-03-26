@@ -42,7 +42,7 @@ typedef struct s_list
 #  define BUFFER_SIZE 1
 # endif
 
-# ifndef
+# ifndef MAX_FD
 #  define MAX_FD 128
 # endif
 
@@ -51,7 +51,7 @@ typedef struct s_list
 # endif
 
 # ifndef MAX_INT
-#  define MAX_INT -2147483648
+#  define MAX_INT -2147483648	
 # endif
 
 /******************************************************************************/
