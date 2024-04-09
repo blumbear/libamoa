@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_lststr.c                                   :+:      :+:    :+:   */
+/*   double_array_size.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 14:49:58 by ttaquet           #+#    #+#             */
-/*   Updated: 2024/02/22 16:07:21 by ttaquet          ###   ########.fr       */
+/*   Created: 2024/04/09 17:15:03 by ttaquet           #+#    #+#             */
+/*   Updated: 2024/04/09 17:24:13 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libamoa.h"
 
-void	ft_free_lststr(char **lst)
+int	double_array_size(char **double_array)
 {
-	if (!lst)
-		return ;
-	while (*lst)
-	{
-		free(*lst);
-		lst++;
-	}
-    free(lst);
+	int size;
+
+	size = -1;
+	while(double_array[++size])
+		continue;
+	return (size);
 }
+

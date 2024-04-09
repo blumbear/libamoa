@@ -258,9 +258,9 @@ t_list			*ft_lstmap(t_list *list, void *(*f)(void *),
 /******************************************************************************/
 
 /**
- * @brief print character in the str
+ * @brief Trint character in the str
  * 
- * @param str an 'char *' when we have '%' the next charactere 
+ * @param str An 'char *' when we have '%' the next charactere 
  * call the other params
  * @param ... number of variables that vary
  * @return int the numbers of the character who are printed
@@ -310,23 +310,24 @@ int				ft_print_args(char *str);
 
 /******************************************************************************/
 /*                                                                            */
-/* SAFE                                                                       */
+/* DOUBLE_ARRAY                                                               */
 /*                                                                            */
 /******************************************************************************/
 
 /**
- * @brief this function will free every subtab of an tab
+ * @brief This function will free every subtab of an tab
  * 
- * @param lst an tab who are free after this function
+ * @param lst An tab who are free after this function
  */
-void			ft_free_lststr(char **lst);
+void			ft_free_double_array(char **lst);
 
 /**
- * @brief this fuction will free every node of an t_list type
+ * @brief This function return the size y of an double dimensions array
  * 
- * @param lst the list who are free
+ * @param double_array The array
+ * @return int The size of the double dimensions array
  */
-void			ft_free_llist(t_list **lst);
+int				double_array_size(char **double_array);
 
 /******************************************************************************/
 /*                                                                            */

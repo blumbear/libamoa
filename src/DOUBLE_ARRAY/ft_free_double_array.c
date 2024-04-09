@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_llist.c                                    :+:      :+:    :+:   */
+/*   ft_free_double_array.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 15:05:30 by ttaquet           #+#    #+#             */
-/*   Updated: 2024/01/22 17:03:11 by ttaquet          ###   ########.fr       */
+/*   Created: 2024/01/09 14:49:58 by ttaquet           #+#    #+#             */
+/*   Updated: 2024/04/09 17:24:04 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libamoa.h"
 
-void	ft_free_llist(t_list **lst)
+void	ft_free_double_array(char **double_array)
 {
-	t_list	*tmp;
-
-	if (!lst)
+	if (!double_array)
 		return ;
-	while (*lst)
+	while (*double_array)
 	{
-		tmp = (*lst)->next;
-		(*lst)->content = 0;
-		free(*lst);
-		*lst = tmp;
+		free(*double_array);
+		double_array++;
 	}
+	free(double_array);
 }
