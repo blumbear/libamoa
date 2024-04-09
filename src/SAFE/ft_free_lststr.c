@@ -21,4 +21,5 @@ void	ft_free_lststr(char **lst)
 		free(*lst);
 		lst++;
 	}
+    free(lst);
 }
