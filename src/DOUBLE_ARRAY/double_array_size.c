@@ -6,7 +6,7 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:15:03 by ttaquet           #+#    #+#             */
-/*   Updated: 2024/04/09 17:24:13 by ttaquet          ###   ########.fr       */
+/*   Updated: 2024/04/10 17:33:20 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 int	double_array_size(char **double_array)
 {
-	int size;
+	int	size;
 
 	size = -1;
-	while(double_array[++size])
-		continue;
+	while (double_array[++size])
+		continue ;
 	return (size);
 }
-
