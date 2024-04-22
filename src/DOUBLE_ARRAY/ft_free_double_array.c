@@ -14,12 +14,12 @@
 
 void	ft_free_double_array(char **double_array)
 {
+	int i;
+
+	i = -1;
 	if (!double_array)
 		return ;
-	while (*double_array)
-	{
-		free(*double_array);
-		double_array++;
-	}
+	while (double_array[++i])
+		free(double_array[i]);
 	free(double_array);
 }
