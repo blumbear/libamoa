@@ -61,25 +61,18 @@ typedef struct s_list
 /******************************************************************************/
 
 /**
- * @brief Tells whether or not `c` is a letter.
- * @param c A character.
- * @return Whether or not `c` is a letter.
- */
-int				ft_isalpha(int c);
-
-/**
- * @brief Tells whether or not `c` is a digit.
- * @param c A character.
- * @return Whether or not `c` is a digit.
- */
-int				ft_isdigit(int c);
-
-/**
  * @brief Tells whether or not `c` is a letter or a digit.
  * @param c A character.
  * @return Whether or not `c` is a letter or a digit.
  */
 int				ft_isalnum(int c);
+
+/**
+ * @brief Tells whether or not `c` is a letter.
+ * @param c A character.
+ * @return Whether or not `c` is a letter.
+ */
+int				ft_isalpha(int c);
 
 /**
  * @brief Tells whether or not `c` is an ascii character.
@@ -89,11 +82,25 @@ int				ft_isalnum(int c);
 int				ft_isascii(int c);
 
 /**
+ * @brief Tells whether or not `c` is a digit.
+ * @param c A character.
+ * @return Whether or not `c` is a digit.
+ */
+int				ft_isdigit(int c);
+
+/**
  * @brief Tells whether or not `c` is printable.
  * @param c A character.
  * @return Whether or not `c` is printable.
  */
 int				ft_isprint(int c);
+
+/**
+ * @brief If `c` is a letter, converts it to lowercase.
+ * @param c a character.
+ * @return The transformes character.
+ */
+int				ft_tolower(int c);
 
 /**
  * @brief If `c` is a letter, converts it to uppercase.
@@ -102,12 +109,26 @@ int				ft_isprint(int c);
  */
 int				ft_toupper(int c);
 
+/******************************************************************************/
+/*                                                                            */
+/* DOUBLE_ARRAY                                                               */
+/*                                                                            */
+/******************************************************************************/
+
 /**
- * @brief If `c` is a letter, converts it to lowercase.
- * @param c a character.
- * @return The transformes character.
+ * @brief This function return the size y of an double dimensions array
+ * 
+ * @param double_array The array
+ * @return int The size of the double dimensions array
  */
-int				ft_tolower(int c);
+int				double_array_size(char **double_array);
+
+/**
+ * @brief This function will free every subtab of an tab
+ * 
+ * @param lst An tab who are free after this function
+ */
+void			ft_free_double_array(char **lst);
 
 /******************************************************************************/
 /*                                                                            */
@@ -137,13 +158,6 @@ char			*get_next_line(int fd);
 void			ft_putchar_fd(char c, int fd);
 
 /**
- * @brief Outputs the string `str` to the given file descriptor.
- * @param str The string to output.
- * @param fd The file descriptor on which to write.
- */
-void			ft_putstr_fd(char *str, int fd);
-
-/**
  * @brief Outputs the string `str` to the given file descriptor followed by a
  * newline.
  * @param str 
@@ -167,41 +181,18 @@ void			ft_putnbr_base_fd(size_t n, char *base, int fd);
  */
 void			ft_putnbr_fd(signed int n, int fd);
 
+/**
+ * @brief Outputs the string `str` to the given file descriptor.
+ * @param str The string to output.
+ * @param fd The file descriptor on which to write.
+ */
+void			ft_putstr_fd(char *str, int fd);
+
 /******************************************************************************/
 /*                                                                            */
 /* Linked list                                                                */
 /*                                                                            */
 /******************************************************************************/
-
-/**
- * @brief Allocates (with malloc(3)) and returns a new node. The member variable
- * `content` is initialized with the value of the parameter `content`.
- * The variable `next` is initialized to `NULL`.
- * @param content The content to create the node with.
- * @return The new node.
- */
-t_list			*ft_lstnew(void *content);
-
-/**
- * @brief Adds the node `new` at the beginning of `list`.
- * @param list The address of a pointer to the first link of a list.
- * @param new The address of a pointer to the node to be added to the list.
- */
-void			ft_lstadd_front(t_list **lst, t_list *new);
-
-/**
- * @brief Counts the number of nodes in a list.
- * @param list The beginning of the list.
- * @return The length of the list.
- */
-int				ft_lstsize(t_list *list);
-
-/**
- * @brief Returns the last node of the list.
- * @param list The beginning of the list.
- * @return Last node of the list.
- */
-t_list			*ft_lstlast(t_list *list);
 
 /**
  * @brief Adds the node `new` at the end of the list.
@@ -211,13 +202,11 @@ t_list			*ft_lstlast(t_list *list);
 void			ft_lstadd_back(t_list **list, t_list *new);
 
 /**
- * @brief Takes as a parameter a node and frees the memory of the node’s content
- * using the function `del_fun` given as a parameter and free the node. The
- * memory of `next` must not be freed.
- * @param list The node to free.
- * @param del_fun The address of the function used to delete the content.
+ * @brief Adds the node `new` at the beginning of `list`.
+ * @param list The address of a pointer to the first link of a list.
+ * @param new The address of a pointer to the node to be added to the list.
  */
-void			ft_lstdelone(t_list *list, void (*del_fun)(void *));
+void			ft_lstadd_front(t_list **lst, t_list *new);
 
 /**
  * @brief Deletes and frees the given node and every successor of that node,
@@ -230,12 +219,28 @@ void			ft_lstdelone(t_list *list, void (*del_fun)(void *));
 void			ft_lstclear(t_list **list, void (*del_fun)(void *));
 
 /**
+ * @brief Takes as a parameter a node and frees the memory of the node’s content
+ * using the function `del_fun` given as a parameter and free the node. The
+ * memory of `next` must not be freed.
+ * @param list The node to free.
+ * @param del_fun The address of the function used to delete the content.
+ */
+void			ft_lstdelone(t_list *list, void (*del_fun)(void *));
+
+/**
  * @brief Iterates the list `list` and applies the function `f` on the content
  * of each node.
  * @param list The address of a pointer to a node.
  * @param f The address of the function used to iterate on the list.
  */
 void			ft_lstiter(t_list *list, void (*f)(void *));
+
+/**
+ * @brief Returns the last node of the list.
+ * @param list The beginning of the list.
+ * @return Last node of the list.
+ */
+t_list			*ft_lstlast(t_list *list);
 
 /**
  * @brief Iterates the list `list` and applies the function `f` on the content of
@@ -250,6 +255,22 @@ void			ft_lstiter(t_list *list, void (*f)(void *));
  */
 t_list			*ft_lstmap(t_list *list, void *(*f)(void *),
 					void (*del_fun)(void *));
+
+/**
+ * @brief Allocates (with malloc(3)) and returns a new node. The member variable
+ * `content` is initialized with the value of the parameter `content`.
+ * The variable `next` is initialized to `NULL`.
+ * @param content The content to create the node with.
+ * @return The new node.
+ */
+t_list			*ft_lstnew(void *content);
+
+/**
+ * @brief Counts the number of nodes in a list.
+ * @param list The beginning of the list.
+ * @return The length of the list.
+ */
+int				ft_lstsize(t_list *list);
 
 /******************************************************************************/
 /*                                                                            */
@@ -310,27 +331,6 @@ int				ft_print_args(char *str);
 
 /******************************************************************************/
 /*                                                                            */
-/* DOUBLE_ARRAY                                                               */
-/*                                                                            */
-/******************************************************************************/
-
-/**
- * @brief This function will free every subtab of an tab
- * 
- * @param lst An tab who are free after this function
- */
-void			ft_free_double_array(char **lst);
-
-/**
- * @brief This function return the size y of an double dimensions array
- * 
- * @param double_array The array
- * @return int The size of the double dimensions array
- */
-int				double_array_size(char **double_array);
-
-/******************************************************************************/
-/*                                                                            */
 /* Stdlib                                                                     */
 /*                                                                            */
 /******************************************************************************/
@@ -344,6 +344,14 @@ int				double_array_size(char **double_array);
 int				ft_atoi(const char *str);
 
 /**
+ * @brief Converts the initial portion of the string pointed to by `str` to an
+ * long integer.
+ * @param str The string to be converted.
+ * @return The converted value in an long int.
+ */
+long int		ft_atol(const char *str);
+
+/**
  * @brief Allocates memory for an array of `nmemb` elements of size bytes each
  * and returns a pointer to the allocated memory. The memory is set to zero. 
  * If `nmemb` or `size` is 0, then calloc() returns either NULL, or a unique
@@ -355,16 +363,6 @@ int				ft_atoi(const char *str);
  * @return Return a pointer to the allocated memory or NULL if case of error.
  */
 void			*ft_calloc(size_t nmemb, size_t size);
-
-/**
- * @brief Allocates memory from the 'ptr' to the size 'size', if the 'ptr' 
- * are allocated it's a simple malloc otherwise the fonction will 
- * allocated size from the start of the array 'ptr'.
- * @param ptr the start of the memory.
- * @param size The numbers of elements.
- * @return Return a pointer to the allocated memory or NULL if case of error.
- */
-void			*ft_realloc(void *ptr, size_t newsize);
 
 /******************************************************************************/
 /*                                                                            */
