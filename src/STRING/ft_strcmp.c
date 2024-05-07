@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atol.c                                          :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/24 12:42:07 by tom               #+#    #+#             */
-/*   Updated: 2024/05/07 17:20:10 by ttaquet          ###   ########.fr       */
+/*   Created: 2024/05/07 17:00:49 by ttaquet           #+#    #+#             */
+/*   Updated: 2024/05/07 17:19:39 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libamoa.h"
 
-long int	ft_atol(const char *str)
+int	ft_strcmp(char *first, char *second)
 {
-	long int	res;
-	int			sign;
+	int	i;
 
-	res = 0;
-	sign = 1;
-	while (*str == ' ' || *str == '\f' || *str == '\n'
-		|| *str == '\r' || *str == '\t' || *str == '\v')
-		str++;
-	if (*str == '-' || *str == '+')
-	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
-	}
-	while (*str >= '0' && *str <= '9')
-	{
-		res = res * 10 + (*str - '0');
-		str++;
-	}
-	return (res * sign);
+	i = -1;
+	while (first[++i] && second[i])
+		if (first[i] == second[i])
+			continue ;
+	return (((unsigned char)first[i]) - ((unsigned char)second[i]));
 }

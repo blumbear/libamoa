@@ -6,7 +6,7 @@
 /*   By: ttaquet <ttaquet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 14:49:58 by ttaquet           #+#    #+#             */
-/*   Updated: 2024/04/09 17:24:04 by ttaquet          ###   ########.fr       */
+/*   Updated: 2024/05/07 17:20:28 by ttaquet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_free_double_array(char **double_array)
 {
-	int i;
+	int	i;
 
 	i = -1;
 	if (!double_array)
