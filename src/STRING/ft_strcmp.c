@@ -18,7 +18,7 @@ int	ft_strcmp(char *first, char *second)
 
 	i = -1;
 	while (first[++i] && second[i])
-		if (first[i] == second[i])
-			continue ;
+		if (first[i] != second[i])
+			return (((unsigned char)first[i]) - ((unsigned char)second[i]));
 	return (((unsigned char)first[i]) - ((unsigned char)second[i]));
 }
