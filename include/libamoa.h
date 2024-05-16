@@ -336,6 +336,14 @@ int				ft_print_args(char *str);
 /******************************************************************************/
 
 /**
+ * @brief This function return the absolute value of n
+ * 
+ * @param n An int
+ * @return int The absolute value of x
+ */
+int				ft_abs(int n);
+
+/**
  * @brief Converts the initial portion of the string pointed to by `str` to an
  * integer.
  * @param str The string to be converted.
