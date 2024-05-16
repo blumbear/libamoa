@@ -6,7 +6,7 @@
 #    By: tom <tom@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 16:02:49 by ttaquet           #+#    #+#              #
-#    Updated: 2024/05/16 15:33:39 by tom              ###   ########.fr        #
+#    Updated: 2024/05/16 15:37:16 by tom              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ ft_lstlast ft_lstmap ft_lstnew ft_lstsize
 
 PRINTF = ft_printf_utils ft_printf
 
-STDLIB = ft_atoi ft_atol ft_calloc ft_abs
+STDLIB = ft_abs ft_atoi ft_atol ft_calloc
 
 STRING = ft_bzero ft_intlen ft_itoa ft_memchr ft_memcmp ft_memcpy ft_memmove ft_memset \
 ft_split ft_strchr ft_strcmp ft_strcpy ft_strdup ft_striteri ft_strjoin ft_strlcat ft_strlcpy \
