@@ -62,38 +62,57 @@ typedef struct s_list
 
 /**
  * @brief Tells whether or not `c` is a letter or a digit.
+ * 
  * @param c A character.
- * @return Whether or not `c` is a letter or a digit.
+ * @return true 'c' is a letter or a digit.
+ * @return false 'c' is not a letter or a digit.
  */
-int				ft_isalnum(int c);
+bool			ft_isalnum(int c);
 
 /**
  * @brief Tells whether or not `c` is a letter.
+ * 
  * @param c A character.
- * @return Whether or not `c` is a letter.
+ * @return true 'c' is a letter.
+ * @return false 'c' is not a letter.
  */
-int				ft_isalpha(int c);
+bool			ft_isalpha(int c);
 
 /**
  * @brief Tells whether or not `c` is an ascii character.
+ * 
  * @param c A character.
- * @return Whether or not `c` is an ascii character.
+ * @return true 'c' is a ascii character.
+ * @return false 'c' is not a ascii character.
  */
-int				ft_isascii(int c);
+bool			ft_isascii(int c);
 
 /**
- * @brief Tells whether or not `c` is a digit.
+ * @brief Tells whether or not `c` is or a digit.
+ * 
  * @param c A character.
- * @return Whether or not `c` is a digit.
+ * @return true 'c' is or a digit.
+ * @return false 'c' is not or a digit.
  */
-int				ft_isdigit(int c);
+bool			ft_isdigit(int c);
 
 /**
  * @brief Tells whether or not `c` is printable.
+ * 
  * @param c A character.
- * @return Whether or not `c` is printable.
+ * @return true 'c' is printable.
+ * @return false 'c' is not printable.
  */
-int				ft_isprint(int c);
+bool			ft_isprint(int c);
+
+/**
+ * @brief Tells whether or not `c` is a white space.
+ * 
+ * @param c A character.
+ * @return true 'c' is a white space.
+ * @return false 'c' is not a white space.
+ */
+bool			is_whitespace(char	c);
 
 /**
  * @brief If `c` is a letter, converts it to lowercase.

@@ -6,7 +6,7 @@
 #    By: tom <tom@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 16:02:49 by ttaquet           #+#    #+#              #
-#    Updated: 2024/05/16 15:37:16 by tom              ###   ########.fr        #
+#    Updated: 2024/06/26 04:14:43 by tom              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libamoa.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
 
-CTYPE = ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint ft_tolower ft_toupper
+CTYPE = ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint ft_iswhitespace ft_tolower ft_toupper
 
 DOUBLE_ARRAY = double_array_size ft_free_double_array
 
