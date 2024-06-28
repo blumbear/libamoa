@@ -135,19 +135,28 @@ int				ft_toupper(int c);
 /******************************************************************************/
 
 /**
- * @brief This function return the size y of an double dimensions array
+ * @brief This function return the size y of an double dimensions array.
  * 
- * @param double_array The array
- * @return int The size of the double dimensions array
+ * @param double_array The double array.
+ * @return int The size of the double dimensions array.
  */
 int				double_array_size(char **double_array);
 
 /**
- * @brief This function will free every subtab of an tab
+ * @brief This function will free every subtab of an tab.
  * 
- * @param lst An tab who are free after this function
+ * @param double_array An tab who are free after this function.
  */
-void			ft_free_double_array(char **lst);
+void			ft_free_double_array(char **double_array);
+
+/**
+ * @brief This function simply prints every char * of a char ** and add a
+ * new line or not.
+ * 
+ * @param double_array The double array.
+ * @param new_line Whether the function add a new line or not.
+ */
+void			ft_print_double_array(char **double_array, bool new_line);
 
 /******************************************************************************/
 /*                                                                            */
