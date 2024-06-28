@@ -165,10 +165,10 @@ void			ft_print_double_array(char **double_array, bool new_line);
 /******************************************************************************/
 
 /**
- * @brief Get the next line of the file 'fd'
+ * @brief Get the next line of the file 'fd'.
  * 
- * @param fd the file who are open
- * @return char* the next line of the file
+ * @param fd the file who are open.
+ * @return char* the next line of the file.
  */
 char			*get_next_line(int fd);
 
@@ -188,8 +188,8 @@ void			ft_putchar_fd(char c, int fd);
 /**
  * @brief Outputs the string `str` to the given file descriptor followed by a
  * newline.
- * @param str 
- * @param fd 
+ * @param str The string to output with a new line.
+ * @param fd The file descriptor on which to write.
  */
 void			ft_putendl_fd(char *str, int fd);
 
@@ -307,53 +307,53 @@ int				ft_lstsize(t_list *list);
 /******************************************************************************/
 
 /**
- * @brief Trint character in the str
+ * @brief Print character in the str.
  * 
- * @param str An 'char *' when we have '%' the next charactere 
- * call the other params
- * @param ... number of variables that vary
- * @return int the numbers of the character who are printed
+ * @param str An 'char *' when we have '%' the next character
+ * call the other params.
+ * @param ... Number of variables that vary.
+ * @return int The numbers of the character who are printed.
  */
 int				ft_printf(const char *str, ...);
 
 /**
- * @brief print an int and give his length
+ * @brief Print an int and give his length.
  * 
- * @param n number who need to be printed
- * @return int the number of caractere who are printed
+ * @param n Number who need to be printed
+ * @return int The number of caractere who are printed
  */
 int				ft_printnbr(int n);
 
 /**
- * @brief print an int and give his length in base 'base'
+ * @brief Print an int and give his length in base 'base'.
  * 
- * @param base an number base
- * @param n number who need to be printed in base 'base'
- * @return int the number of caractere who are printed
+ * @param base An number base.
+ * @param n The number who need to be printed in base 'base'.
+ * @return int The numbers of characters that must be displayed.
  */
 int				ft_print_nbr_base(size_t n, char	*base);
 
 /**
- * @brief print an pointer address and give his length in base 'base'
+ * @brief Print an pointer address and give his length in base 'base'.
  * 
- * @param ptr a pointer
- * @return int the number of caracter in the address
+ * @param ptr A pointer.
+ * @return int The number of caracter in the address.
  */
 int				ft_print_ptr(void	*ptr);
 
 /**
- * @brief print a char and return 1
+ * @brief Print a char and return 1.
  * 
- * @param c the char who are printed
- * @return int 1
+ * @param c the char who are printed.
+ * @return int The int 1.
  */
 int				ft_print_char(char c);
 
 /**
- * @brief print an str and return is length
+ * @brief Print an str and return is length.
  * 
- * @param str the str who are printed
- * @return int the lenght of the str
+ * @param str The str that must be diplayed.
+ * @return int The lenght of the str.
  */
 int				ft_print_args(char *str);
 
@@ -364,10 +364,10 @@ int				ft_print_args(char *str);
 /******************************************************************************/
 
 /**
- * @brief This function return the absolute value of n
+ * @brief This function return the absolute value of n.
  * 
- * @param n An int
- * @return int The absolute value of x
+ * @param n An int.
+ * @return int The absolute value of 'n'.
  */
 int				ft_abs(int n);
 
@@ -414,10 +414,10 @@ void			*ft_calloc(size_t nmemb, size_t size);
 void			ft_bzero(void	*s, size_t	n);
 
 /**
- * @brief Calculate the length of 'number'
+ * @brief Calculate the length of 'number'.
  * 
- * @param number An str
- * @return size_t The length of 'number'
+ * @param number An str.
+ * @return size_t The length of 'number'.
  */
 size_t			ft_intlen(int number);
 
@@ -452,7 +452,7 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 
 /**
  * @brief Copies `n` bytes of `src` to `dest`. The memory areas mus not overlap.
- * ft_memmove will not orverlap
+ * ft_memmove will not orverlap.
  * @param dest A pointer to a memory area.
  * @param src A pointer to a memory area.
  * @param n The ammount of bytes to copy.
@@ -512,7 +512,7 @@ char			*ft_strchr(const char *str, int c);
 int				ft_strcmp(char *first, char *second);
 
 /**
- * @brief copies 'src' to 'dest'
+ * @brief Copies 'src' to 'dest'.
  * 
  * @param dest A pointer to a memory area.
  * @param src A string.
@@ -647,10 +647,10 @@ char			*ft_strtrim(char const *s, char const *set);
 char			*ft_substr(char const *str, unsigned int start, size_t len);
 
 /**
- * @brief Swap value of 'a' end 'b'
+ * @brief Swap value of 'a' end 'b'.
  * 
- * @param a Variable 'a'
- * @param b Variable 'b'
+ * @param a Variable 'a'.
+ * @param b Variable 'b'.
  */
 void			ft_swap(unsigned char	*a, unsigned char	*b);
 
