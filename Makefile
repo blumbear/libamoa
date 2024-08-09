@@ -6,7 +6,7 @@
 #    By: tom <tom@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 16:02:49 by ttaquet           #+#    #+#              #
-#    Updated: 2024/06/28 02:39:30 by tom              ###   ########.fr        #
+#    Updated: 2024/08/09 16:28:19 by tom              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,8 @@ IO = ft_putchar_fd ft_putendl_fd ft_putnbr_base_fd ft_putnbr_fd ft_putstr_fd
 LINKED_LIST = ft_lstadd_back ft_lstadd_front ft_lstclear ft_lstdelone ft_lstiter \
 ft_lstlast ft_lstmap ft_lstnew ft_lstsize
 
+MATH = ft_pow
+
 PRINTF = ft_printf_utils ft_printf
 
 STDLIB = ft_abs ft_atoi ft_atol ft_calloc
@@ -39,6 +41,7 @@ $(DOUBLE_ARRAY) \
 $(GET_NEXT_LINE) \
 $(IO) \
 $(LINKED_LIST) \
+$(MATH) \
 $(PRINTF) \
 $(STDLIB) \
 $(STRING)
@@ -48,6 +51,7 @@ $(addprefix src/DOUBLE_ARRAY/, $(DOUBLE_ARRAY)) \
 $(addprefix src/GET_NEXT_LINE/, $(GET_NEXT_LINE)) \
 $(addprefix src/IO/, $(IO)) \
 $(addprefix src/LINKED_LIST/, $(LINKED_LIST)) \
+$(addprefix src/MATH/, $(MATH)) \
 $(addprefix src/PRINTF/, $(PRINTF)) \
 $(addprefix src/STDLIB/, $(STDLIB)) \
 $(addprefix src/STRING/, $(STRING))

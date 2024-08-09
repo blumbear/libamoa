@@ -302,6 +302,21 @@ int				ft_lstsize(t_list *list);
 
 /******************************************************************************/
 /*                                                                            */
+/* MATH                                                                       */
+/*                                                                            */
+/******************************************************************************/
+
+/**
+ * @brief This function returns the result of n raised to the power of pow.
+ * 
+ * @param n An int.
+ * @param pow The power by which to multiply n.
+ * @return int The result of n raised to the power of pow.
+ */
+int				ft_pow(int n, int pow);
+
+/******************************************************************************/
+/*                                                                            */
 /* PRINTF                                                                     */
 /*                                                                            */
 /******************************************************************************/
